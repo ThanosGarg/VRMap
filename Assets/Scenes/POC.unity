@@ -119,6 +119,77 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &913971269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913971272}
+  - component: {fileID: 913971271}
+  - component: {fileID: 913971270}
+  m_Layer: 0
+  m_Name: CesiumGeoreference
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &913971270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913971269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1fb41cdd01d7649a082f1a8f2bd114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useMainCamera: 1
+  _useSceneViewCameraInEditor: 0
+  _additionalCameras: []
+--- !u!114 &913971271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913971269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1305e05d46db92498ce698a4c366a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ellipsoidOverride: {fileID: 0}
+  _originPlacement: 1
+  _originAuthority: 0
+  _latitude: 40.640064
+  _longitude: 22.94442
+  _height: 150
+  _ecefX: 4463368.555029898
+  _ecefY: 1889479.8181482414
+  _ecefZ: 4132272.1945677074
+  _scale: 1
+--- !u!4 &913971272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913971269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1636472857}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045413472
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +386,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1581266661
+--- !u!1 &1636472856
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,69 +394,72 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1581266664}
-  - component: {fileID: 1581266663}
-  - component: {fileID: 1581266662}
+  - component: {fileID: 1636472857}
+  - component: {fileID: 1636472858}
   m_Layer: 0
-  m_Name: CesiumGeoreference
+  m_Name: Google Photorealistic 3D Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1581266662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581266661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be1fb41cdd01d7649a082f1a8f2bd114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _useMainCamera: 1
-  _useSceneViewCameraInEditor: 1
-  _additionalCameras: []
---- !u!114 &1581266663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581266661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1305e05d46db92498ce698a4c366a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ellipsoidOverride: {fileID: 0}
-  _originPlacement: 1
-  _originAuthority: 0
-  _latitude: 39.736401
-  _longitude: -105.25737
-  _height: 2250
-  _ecefX: -1292934.4950404565
-  _ecefY: -4740026.104285267
-  _ecefZ: 4056960.1513377777
-  _scale: 1
---- !u!4 &1581266664
+--- !u!4 &1636472857
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581266661}
+  m_GameObject: {fileID: 1636472856}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2128851349}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 913971272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636472858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636472856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844ac86b07dcfa3468f56da55d787510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showCreditsOnScreen: 1
+  _tilesetSource: 0
+  _url: 
+  _ionAssetID: 2275207
+  _ionAccessToken: 
+  _ionServer: {fileID: 11400000, guid: 19a5b5134e5e3b347b1f5e55a25f6937, type: 2}
+  _maximumScreenSpaceError: 16
+  _preloadAncestors: 1
+  _preloadSiblings: 1
+  _forbidHoles: 0
+  _maximumSimultaneousTileLoads: 20
+  _maximumCachedBytes: 536870912
+  _loadingDescendantLimit: 20
+  _enableFrustumCulling: 1
+  _enableFogCulling: 1
+  _enforceCulledScreenSpaceError: 1
+  _culledScreenSpaceError: 64
+  _opaqueMaterial: {fileID: 0}
+  _generateSmoothNormals: 0
+  _ignoreKhrMaterialsUnlit: 0
+  _pointCloudShading:
+    _attenuation: 0
+    _geometricErrorScale: 1
+    _maximumAttenuation: 0
+    _baseResolution: 0
+  _suspendUpdate: 0
+  _showTilesInHierarchy: 0
+  _updateInEditor: 1
+  _logSelectionStats: 0
+  _createPhysicsMeshes: 0
 --- !u!1001 &1734620839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,80 +638,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &2128851348
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2128851349}
-  - component: {fileID: 2128851350}
-  m_Layer: 0
-  m_Name: Google Photorealistic 3D Tiles
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2128851349
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128851348}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1581266664}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2128851350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128851348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844ac86b07dcfa3468f56da55d787510, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showCreditsOnScreen: 0
-  _tilesetSource: 0
-  _url: 
-  _ionAssetID: 2275207
-  _ionAccessToken: 
-  _ionServer: {fileID: 11400000, guid: 19a5b5134e5e3b347b1f5e55a25f6937, type: 2}
-  _maximumScreenSpaceError: 4
-  _preloadAncestors: 1
-  _preloadSiblings: 1
-  _forbidHoles: 0
-  _maximumSimultaneousTileLoads: 20
-  _maximumCachedBytes: 536870912
-  _loadingDescendantLimit: 20
-  _enableFrustumCulling: 1
-  _enableFogCulling: 1
-  _enforceCulledScreenSpaceError: 1
-  _culledScreenSpaceError: 16
-  _opaqueMaterial: {fileID: 0}
-  _generateSmoothNormals: 1
-  _ignoreKhrMaterialsUnlit: 0
-  _pointCloudShading:
-    _attenuation: 0
-    _geometricErrorScale: 1
-    _maximumAttenuation: 0
-    _baseResolution: 0
-  _suspendUpdate: 0
-  _showTilesInHierarchy: 0
-  _updateInEditor: 1
-  _logSelectionStats: 0
-  _createPhysicsMeshes: 1
 --- !u!4 &32846063483826752
 Transform:
   m_ObjectHideFlags: 0
@@ -1216,7 +1216,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4822,7 +4822,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5608391396362481905}
+      - m_Target: {fileID: -627304555572474643, guid: 0000000000000000d000000000000000, type: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -4849,7 +4849,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 5608391396362481905}
+      - m_Target: {fileID: -627304555572474643, guid: 0000000000000000d000000000000000, type: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -22987,7 +22987,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -29809,8 +29809,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1968953758}
-  - {fileID: 1581266664}
   - {fileID: 1045413475}
   - {fileID: 8806329116009360713}
   - {fileID: 1734620839}
   - {fileID: 1461367834}
+  - {fileID: 913971272}
