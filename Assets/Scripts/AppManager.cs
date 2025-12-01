@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class AppManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static AppManager instance;
+    public GeoCodeAddress geoCoder;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 }

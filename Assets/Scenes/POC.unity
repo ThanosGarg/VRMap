@@ -166,13 +166,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ellipsoidOverride: {fileID: 0}
   _originPlacement: 1
-  _originAuthority: 1
+  _originAuthority: 0
   _latitude: 40.626229547462444
   _longitude: 22.94853030441921
   _height: 156.71928062498625
-  _ecefX: 4464158.974696029
-  _ecefY: 1890192.0815325403
-  _ecefZ: 4131110.6734748767
+  _ecefX: 4464158.974696028
+  _ecefY: 1890192.08153254
+  _ecefZ: 4131110.673474877
   _scale: 1
 --- !u!4 &913971272
 Transform:
@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 1265033757}
   - component: {fileID: 1265033759}
   - component: {fileID: 1265033758}
+  - component: {fileID: 1265033760}
   m_Layer: 0
   m_Name: AppManager
   m_TagString: Untagged
@@ -322,6 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2355c08ba7bce4bb959548c59195ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  address: White Tower of Thessaloniki
   lat: 0
   lon: 0
   poiPrefab: {fileID: 6271438632318230813, guid: cf67efa54f06a9940a45e4c951d246c5, type: 3}
@@ -339,6 +341,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4832ed48b069ed74a9f04a4975f9f48c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  geoCoder: {fileID: 1265033760}
+--- !u!114 &1265033760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265033756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba5a1a3413e0044a945249d18dc3286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contactEmail: thanosgargoulkas@gmail.com
+  minRequestIntervalSeconds: 1
+  demoAddress: 
+  runDemoOnStart: 0
 --- !u!1 &1461367830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1421,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -23173,7 +23192,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
