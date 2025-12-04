@@ -41,11 +41,15 @@ public class TourManager : MonoBehaviour
     {
         lat = (float)latitude;
         lon = (float)longitude;
+        georeference.SetOriginLongitudeLatitudeHeight(lon, lat, 150f);
+        onGeocodeSuccess -= OnGeocodeSuccess;
+        onGeocodeError -= OnGeocodeError;
     }
 
     private void OnGeocodeError(string error)
     {
         Debug.Log($"Geocode error: {error}");
+
     }
 
     public void SpawnPOI(POIData data)

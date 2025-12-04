@@ -29,11 +29,7 @@ public class GeoCodeAddress : MonoBehaviour
         }
     }
 
-    // Update remains unchanged
-    void Update()
-    {
 
-    }
 
     // Public API: call with an address, receive lat/lon via callbacks
     public void Geocode(string address, Action<double, double> onSuccess = null, Action<string> onError = null)
