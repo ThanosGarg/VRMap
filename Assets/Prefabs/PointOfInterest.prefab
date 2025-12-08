@@ -160,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poiData:
     poiName: 
+    address: 
     latitude: 0
     longitude: 0
     height: 0

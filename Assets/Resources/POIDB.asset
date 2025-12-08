@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: POIDB
   m_EditorClassIdentifier: 
   poiList:
-  - poiName: White Tower
-    latitude: 40.62636
-    longitude: 22.948391
+  - poiName: Stadiou
+    address: Stadiou 1,Athens
+    latitude: 37.97646
+    longitude: 23.734291
+    height: 250
+  - poiName: Spiti mou
+    address: Ikarias 5, Chalandri
+    latitude: 38.011284
+    longitude: 23.797367
     height: 100
-  - poiName: Parko
-    latitude: 40.62631
-    longitude: 22.948391
-    height: 150
