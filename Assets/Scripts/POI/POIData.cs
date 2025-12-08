@@ -5,7 +5,7 @@ using UnityEngine;
 public class POIData
 {
     public string poiName;
-
+    public string address;
     public float latitude = 0f;
     public float longitude = 0f;
     public float height = 0f;
