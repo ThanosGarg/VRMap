@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public PointOfInterest currentPOI;
+
+    private void OnTriggerEnter(Collider other)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        PointOfInterest poi = other.GetComponent<PointOfInterest>();
+        if (poi != null)
+        {
+            currentPOI = poi;
+            Debug.Log("Entered POI: " + poi.poiData.address);
+        }
     }
 }
