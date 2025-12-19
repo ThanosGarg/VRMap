@@ -188,6 +188,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1636472857}
+  - {fileID: 8806329116009360713}
+  - {fileID: 1461367834}
+  - {fileID: 1556099502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045413472
@@ -323,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2355c08ba7bce4bb959548c59195ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  address: Stadiou 1,Athens
+  address: White Tower, Thessaloniki
   lat: 0
   lon: 0
   poiPrefab: {fileID: 6271438632318230813, guid: cf67efa54f06a9940a45e4c951d246c5, type: 3}
@@ -460,12 +463,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461367830}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 913971272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503549820
 GameObject:
@@ -498,6 +501,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1556099502 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+  m_PrefabInstance: {fileID: 1734620839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1620574922
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,7 +648,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 913971272}
     m_Modifications:
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalPosition.x
@@ -660,15 +668,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7565,6 +7573,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -8104,6 +8113,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -8398,6 +8408,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -14820,6 +14831,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -15166,6 +15178,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -15645,6 +15658,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -15785,6 +15799,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -26404,24 +26419,24 @@ MonoBehaviour:
   _detectTransformChanges: 1
   _localToGlobeFixedMatrix:
     c0:
-      x: -0.38983800537423663
+      x: -0.3898380053742367
       y: 0.9208834505874435
-      z: 0.0000000000004693365311734914
+      z: 0.0000000000004693365379497549
       w: 0
     c1:
-      x: 0.6987811128045148
+      x: 0.6987811128045149
       y: 0.295815322812915
-      z: 0.6513050369656107
+      z: 0.651305036965611
       w: 0
     c2:
-      x: -0.5997760298257352
-      y: -0.25390345650119533
-      z: 0.758816017769278
+      x: -0.5997760298257355
+      y: -0.2539034565011955
+      z: 0.7588160177692781
       w: 0
     c3:
-      x: 4463368.555060839
-      y: 1889479.8181647162
-      z: 4132272.194527185
+      x: 4463368.555060838
+      y: 1889479.818164716
+      z: 4132272.1945271855
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
 --- !u!120 &7917674759218411616
@@ -27321,7 +27336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Mediator: {fileID: 3586902110761471292}
   m_TransformationPriority: 0
-  m_MoveSpeed: 2.5
+  m_MoveSpeed: 22.7
   m_InAirControlModifier: 0.5
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -27354,7 +27369,7 @@ MonoBehaviour:
     m_InputActionReference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_HeadTransform: {fileID: 7917674758604764181}
   m_LeftControllerTransform: {fileID: 7917674758121739383}
   m_RightControllerTransform: {fileID: 7917674758499308694}
@@ -27988,7 +28003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8331094024260873758
 Transform:
   m_ObjectHideFlags: 0
@@ -29237,7 +29252,7 @@ Transform:
   - {fileID: 7917674758522136628}
   - {fileID: 937590820357162851}
   - {fileID: 7917693440634086493}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 913971272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8806329116009360714
 GameObject:
@@ -30071,7 +30086,4 @@ SceneRoots:
   - {fileID: 1701126902}
   - {fileID: 913971272}
   - {fileID: 2116726394}
-  - {fileID: 8806329116009360713}
-  - {fileID: 1461367834}
   - {fileID: 1503549821}
-  - {fileID: 1734620839}
