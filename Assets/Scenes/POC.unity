@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 1265033759}
   - component: {fileID: 1265033760}
   - component: {fileID: 1265033758}
+  - component: {fileID: 1265033761}
   m_Layer: 0
   m_Name: AppManager
   m_TagString: Untagged
@@ -389,6 +390,25 @@ MonoBehaviour:
   minRequestIntervalSeconds: 1
   demoAddress: 
   runDemoOnStart: 0
+--- !u!114 &1265033761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265033756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5cb20c480e798240a694788b3d3fbdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  geoapifyApiKey: 5ef947436d8649609c4cb19e22aa916e
+  startLat: 50.96209827745463
+  startLon: 4.414458883409225
+  endLat: 50.429137079078345
+  endLon: 5.00088081232559
+  travelMode: drive
+  LatestDisruptions: []
 --- !u!1 &1620574922
 GameObject:
   m_ObjectHideFlags: 0
@@ -26548,6 +26568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 913cee2198a6aea4cb431a5eb21e3842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentPOI: {fileID: 0}
 --- !u!1 &8039453386107594322
 GameObject:
   m_ObjectHideFlags: 0
