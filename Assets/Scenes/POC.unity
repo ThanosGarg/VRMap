@@ -358,7 +358,7 @@ MonoBehaviour:
   address: White Tower, Thessaloniki
   lat: 0
   lon: 0
-  poiPrefab: {fileID: 6271438632318230813, guid: cf67efa54f06a9940a45e4c951d246c5, type: 3}
+  poiPrefab: {fileID: 4830695374616460426, guid: e31d8606d095a4b43a478a229cbaafc9, type: 3}
   georeference: {fileID: 913971271}
   poiDatabase: {fileID: 11400000, guid: db41c9508ca296f44851114a9c996d2e, type: 2}
 --- !u!114 &1265033759
@@ -373,6 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4832ed48b069ed74a9f04a4975f9f48c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 8034954091696651621}
   geoCoder: {fileID: 1265033760}
 --- !u!114 &1265033760
 MonoBehaviour:

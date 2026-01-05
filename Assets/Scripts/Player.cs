@@ -13,4 +13,13 @@ public class Player : MonoBehaviour
             Debug.Log("Entered POI: " + poi.poiData.address);
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        PointOfInterest poi = other.GetComponent<PointOfInterest>();
+        if (poi != null && currentPOI == poi)
+        {
+            Debug.Log("Exited POI: " + poi.poiData.address);
+            currentPOI = null;
+        }
+    }
 }
