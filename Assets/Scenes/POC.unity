@@ -375,6 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8034954091696651621}
   geoCoder: {fileID: 1265033760}
+  vrMapUI: {fileID: 1946349463}
 --- !u!114 &1265033760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,6 +692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3323744459210508090, guid: a8740f18c373d3043818555125b500c4, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8219086192169641641, guid: a8740f18c373d3043818555125b500c4, type: 3}
       propertyPath: m_Name
       value: PlayerUI
@@ -704,6 +709,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8740f18c373d3043818555125b500c4, type: 3}
+--- !u!114 &1946349463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8697226003264791839, guid: a8740f18c373d3043818555125b500c4, type: 3}
+  m_PrefabInstance: {fileID: 1946349462}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16fb0b50f03e66488ae83c2ef28aa3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1968953756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,24 +2069,24 @@ MonoBehaviour:
   _detectTransformChanges: 1
   _localToGlobeFixedMatrix:
     c0:
-      x: -0.3898380053742367
-      y: 0.9208834505874435
-      z: 0.0000000000004693365379497549
+      x: -0.389837962053807
+      y: 0.9208834689262981
+      z: 0.00000004037765396561288
       w: 0
     c1:
-      x: 0.6987811128045149
-      y: 0.295815322812915
-      z: 0.651305036965611
+      x: 0.6987811267203319
+      y: 0.29581526138346736
+      z: 0.6513050499359695
       w: 0
     c2:
-      x: -0.5997760298257355
-      y: -0.2539034565011955
-      z: 0.7588160177692781
+      x: -0.5997760417699253
+      y: -0.25390346155753424
+      z: 0.7588160066365917
       w: 0
     c3:
-      x: 4463368.555060838
-      y: 1889479.818164716
-      z: 4132272.1945271855
+      x: 4463368.5551
+      y: 1889477.52
+      z: 4132272.1945
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
 --- !u!1 &391718511432738787

@@ -3,8 +3,6 @@ using UnityEngine;
 using System;
 [RequireComponent(typeof(CesiumGlobeAnchor))]
 public class PointOfInterest : MonoBehaviour
-
-
 {
     public Transform labelTransform;
     public Action<double, double> onAddressToCoordinatesResolved; // added
@@ -27,9 +25,9 @@ public class PointOfInterest : MonoBehaviour
         poiData.longitude = (float)lon;
         globeAnchor.SetPositionLongitudeLatitudeHeight(lon, lat, poiData.height);
 
-    
+
     }
-public void UpdateLabelOrientation(Transform playerTransform)
+    public void UpdateLabelOrientation(Transform playerTransform)
     {
         if (labelTransform != null && playerTransform != null)
         {
@@ -43,6 +41,6 @@ public void UpdateLabelOrientation(Transform playerTransform)
     }
     void Update()
     {
-         UpdateLabelOrientation(AppManager.instance.player.transform);
+        UpdateLabelOrientation(AppManager.instance.player.transform);
     }
 }

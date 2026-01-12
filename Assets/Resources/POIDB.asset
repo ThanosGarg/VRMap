@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: POIDB
   m_EditorClassIdentifier: 
   poiList:
-  - poiName: Test
+  - iconType: 0
+    poiName: Test
     address: Nikiforou Foka 5-1, Thessaloniki
     latitude: 40.629036
     longitude: 22.949755
-    height: 0
+    height: 150
+  - iconType: 1
+    poiName: Studio Me Tanes
+    address: Tsimiski 10, Thessaloniki
+    latitude: 0
+    longitude: 0
+    height: 150
