@@ -1,12 +1,8 @@
 using UnityEngine;
-using System;
 
 public class Player : MonoBehaviour
 {
     public PointOfInterest currentPOI;
-
-    public Action<POIData> POIEntered;
-    public Action POIExited;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,7 +11,6 @@ public class Player : MonoBehaviour
         {
             currentPOI = poi;
             Debug.Log("Entered POI: " + poi.poiData.address);
-            POIEntered?.Invoke(currentPOI.poiData);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -25,7 +20,6 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Exited POI: " + poi.poiData.address);
             currentPOI = null;
-            POIExited?.Invoke();
         }
     }
 }
