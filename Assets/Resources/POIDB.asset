@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poiList:
   - poiName: Test
+    poiType: 6
     address: Nikiforou Foka 5-1, Thessaloniki
     latitude: 40.629036
     longitude: 22.949755
-    height: 0
+    height: 150

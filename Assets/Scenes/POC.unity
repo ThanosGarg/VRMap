@@ -361,6 +361,21 @@ MonoBehaviour:
   poiPrefab: {fileID: 4830695374616460426, guid: e31d8606d095a4b43a478a229cbaafc9, type: 3}
   georeference: {fileID: 913971271}
   poiDatabase: {fileID: 11400000, guid: db41c9508ca296f44851114a9c996d2e, type: 2}
+  Icons:
+  - type: 0
+    icon: {fileID: 21300000, guid: 741f519117f11ac42b2ebd97751ca7f0, type: 3}
+  - type: 1
+    icon: {fileID: 21300000, guid: 105dd30e193d2b744a49679ed19c84bd, type: 3}
+  - type: 2
+    icon: {fileID: 21300000, guid: 5699ae2b60322b6468b80b01ac8c982d, type: 3}
+  - type: 3
+    icon: {fileID: 21300000, guid: 232e78367d2b7f64ba6c87b83efdc3f3, type: 3}
+  - type: 4
+    icon: {fileID: 21300000, guid: 547bacc83ed19ce4bbca4982be3d638a, type: 3}
+  - type: 5
+    icon: {fileID: 21300000, guid: 590ef864dda39784bab473eb067589af, type: 3}
+  - type: 6
+    icon: {fileID: 21300000, guid: 8691802b198f14c40b4c79acdfc4a042, type: 3}
 --- !u!114 &1265033759
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,15 +1,19 @@
 using CesiumForUnity;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+
 
 public class TourManager : MonoBehaviour
 {
+
     public string address = "1600 Amphitheatre Parkway, Mountain View, CA";
     public float lat = 0f;
     public float lon = 0f;
     public PointOfInterest poiPrefab;
     public CesiumGeoreference georeference;
     public POIDB poiDatabase;
+    public List<POIIcon> Icons = new List<POIIcon>();
 
     public Action<double, double> onGeocodeSuccess;
 
@@ -55,6 +59,19 @@ public class TourManager : MonoBehaviour
     public void SpawnPOI(POIData data)
     {
         PointOfInterest poi = Instantiate(poiPrefab, georeference.transform);
-        poi.Init(data);
+        poi.Init(data, this);
     }
+}
+
+public enum POIType
+{
+    SeightSeeing,
+    Hospital,
+    Embassy,
+    BusStop,
+    Museum,
+    MetroStation,
+    ATM,
+
+
 }

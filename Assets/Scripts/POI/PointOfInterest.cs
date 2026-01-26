@@ -1,25 +1,43 @@
 using CesiumForUnity;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 [RequireComponent(typeof(CesiumGlobeAnchor))]
 public class PointOfInterest : MonoBehaviour
 
 
 {
+    
     public Transform labelTransform;
     public Action<double, double> onAddressToCoordinatesResolved; // added
     public POIData poiData;
     private CesiumGlobeAnchor globeAnchor;
-
-    public void Init(POIData data)
+    private TourManager tourManager;    
+    public void Init(POIData data, TourManager manager)
     {
         onAddressToCoordinatesResolved += OnAddressToCoordinatesResolved;
 
         poiData = data;
+        tourManager = manager;
         globeAnchor = GetComponent<CesiumGlobeAnchor>();
         AppManager.instance.geoCoder.Geocode(poiData.address, onAddressToCoordinatesResolved);
+        foreach (POIIcon icon in tourManager.Icons)
+        {
+            if (icon.type == poiData.poiType)
+            {
+                UpdateIcon(icon.icon);
+                break;
+            }
+        }
     }
-
+public void UpdateIcon(Sprite icon)
+    {
+       Image iconImage = labelTransform.GetComponent<Image>(); 
+       if (iconImage != null)
+       {
+           iconImage.sprite = icon;
+       }
+    }
     public void OnAddressToCoordinatesResolved(double lat, double lon) // added
     {
         onAddressToCoordinatesResolved -= OnAddressToCoordinatesResolved;
@@ -46,3 +64,4 @@ public void UpdateLabelOrientation(Transform playerTransform)
          UpdateLabelOrientation(AppManager.instance.player.transform);
     }
 }
+

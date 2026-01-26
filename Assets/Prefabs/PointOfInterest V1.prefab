@@ -162,6 +162,7 @@ MonoBehaviour:
   labelTransform: {fileID: 4584019756932041222}
   poiData:
     poiName: 
+    poiType: 0
     address: 
     latitude: 0
     longitude: 0
@@ -232,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 232e78367d2b7f64ba6c87b83efdc3f3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -254,7 +255,7 @@ GameObject:
   - component: {fileID: 7026866212755913912}
   - component: {fileID: 5394139833290000089}
   m_Layer: 0
-  m_Name: Image
+  m_Name: DownArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
