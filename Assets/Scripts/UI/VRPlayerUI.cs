@@ -58,14 +58,7 @@ public class VRPlayerUI : MonoBehaviour
     {
         gameObject.SetActive(!gameObject.activeSelf);
     }
-
-    /// <summary>
-    /// Returns whether the UI is currently visible.
-    /// </summary>
-    public bool IsVisible
-    {
-        get { return gameObject.activeSelf; }
-    }
+    
 
    
     
