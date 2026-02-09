@@ -38,7 +38,7 @@ public class TourManager : MonoBehaviour
             SpawnPOI(data);
         }
 
-        AppManager.instance.geoCoder.Geocode(address, onGeocodeSuccess, onGeocodeError);
+         AppManager.instance.geoCoder.Geocode(address, onGeocodeSuccess, onGeocodeError);
     }
 
     private void OnGeocodeSuccess(double latitude, double longitude)

@@ -15,12 +15,14 @@ public class PointOfInterest : MonoBehaviour
     private TourManager tourManager;    
     public void Init(POIData data, TourManager manager)
     {
-        onAddressToCoordinatesResolved += OnAddressToCoordinatesResolved;
+        // onAddressToCoordinatesResolved += OnAddressToCoordinatesResolved;
 
         poiData = data;
         tourManager = manager;
         globeAnchor = GetComponent<CesiumGlobeAnchor>();
-        AppManager.instance.geoCoder.Geocode(poiData.address, onAddressToCoordinatesResolved);
+         globeAnchor.SetPositionLongitudeLatitudeHeight(poiData.longitude, poiData.latitude, poiData.height);
+
+        // AppManager.instance.geoCoder.Geocode(poiData.address, onAddressToCoordinatesResolved);
         foreach (POIIcon icon in tourManager.Icons)
         {
             if (icon.type == poiData.poiType)
