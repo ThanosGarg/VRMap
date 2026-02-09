@@ -12,11 +12,13 @@ public TextMeshProUGUI CurrentPOIINFO;
     }
     void OnDisable()
     {
+
         AppManager.instance.player.onEnterPOI -= UpdatePOIINFO;
         AppManager.instance.player.onExitPOI -= ClearPOIINFO;
     }
     void UpdatePOIINFO(POIData currentPOI)
     {
+        Debug.Log($"Entered POI: {currentPOI.poiName}");
         if (currentPOI != null && CurrentPOIINFO != null)
         {
             CurrentPOIINFO.text = $"POI Name: {currentPOI.poiName}\n" +
@@ -30,6 +32,7 @@ public TextMeshProUGUI CurrentPOIINFO;
     }
     void ClearPOIINFO()
     {
+        Debug.Log("Exited POI");
         if (CurrentPOIINFO != null)
         {
             CurrentPOIINFO.text = "No POI Selected";
