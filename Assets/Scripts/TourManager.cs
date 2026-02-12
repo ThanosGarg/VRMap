@@ -38,7 +38,7 @@ public class TourManager : MonoBehaviour
             SpawnPOI(data);
         }
 
-         AppManager.instance.geoCoder.Geocode(address, onGeocodeSuccess, onGeocodeError);
+        AppManager.instance.geoCoder.Geocode(address, onGeocodeSuccess, onGeocodeError);
     }
 
     private void OnGeocodeSuccess(double latitude, double longitude)
@@ -46,6 +46,7 @@ public class TourManager : MonoBehaviour
         lat = (float)latitude;
         lon = (float)longitude;
         georeference.SetOriginLongitudeLatitudeHeight(lon, lat, 150f);
+        AppManager.instance.VRMapUI.StartCoroutine(AppManager.instance.VRMapUI.UpdateMapRoutine());
         onGeocodeSuccess -= OnGeocodeSuccess;
         onGeocodeError -= OnGeocodeError;
     }

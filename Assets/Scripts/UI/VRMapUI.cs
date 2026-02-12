@@ -1,20 +1,29 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class VRMapUI : VRPlayerUI
 {
 
-public TextMeshProUGUI CurrentPOIINFO;
+    public OpenStreetMapViewer mapViewer; // Assign in Inspector
+    public TextMeshProUGUI CurrentPOIINFO;
+    public int zoomLevel = 10;
     void OnEnable()
     {
-      AppManager.instance.player.onEnterPOI += UpdatePOIINFO;
-      AppManager.instance.player.onExitPOI += ClearPOIINFO;  
+        AppManager.instance.player.onEnterPOI += UpdatePOIINFO;
+        AppManager.instance.player.onExitPOI += ClearPOIINFO;
     }
     void OnDisable()
     {
 
         AppManager.instance.player.onEnterPOI -= UpdatePOIINFO;
         AppManager.instance.player.onExitPOI -= ClearPOIINFO;
+    }
+
+
+    public void UpdatePlayerMap()
+    {
+        mapViewer.UpdateCoordinates(AppManager.instance.tourManager.lat, AppManager.instance.tourManager.lon, zoomLevel);
     }
     void UpdatePOIINFO(POIData currentPOI)
     {
@@ -38,6 +47,14 @@ public TextMeshProUGUI CurrentPOIINFO;
             CurrentPOIINFO.text = "No POI Selected";
         }
     }
-     
+    public IEnumerator UpdateMapRoutine()
+    {
+        // suspend execution for 5 seconds
+        while (true)
+        {
+            yield return new WaitForSeconds(5);
+            UpdatePlayerMap();
+        }
+    }
+
 }
- 

@@ -6,6 +6,9 @@ public class AppManager : MonoBehaviour
     public static AppManager instance;
     public GeoCodeAddress geoCoder;
 
+    public TourManager tourManager;
+    public VRMapUI VRMapUI;
+
     private void Awake()
     {
         if (instance == null)
