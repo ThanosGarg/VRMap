@@ -25,3 +25,9 @@ MonoBehaviour:
     latitude: 40.58366
     longitude: 22.970001
     height: 150
+  - poiName: Hospital
+    poiType: 1
+    address: Antheon 61, Thessaloniki
+    latitude: 40.58366
+    longitude: 22.970001
+    height: 150

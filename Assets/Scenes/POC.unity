@@ -748,7 +748,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1265033757}
   - component: {fileID: 1265033759}
-  - component: {fileID: 1265033760}
   m_Layer: 0
   m_Name: AppManager
   m_TagString: Untagged
@@ -784,25 +783,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8034954091696651621}
-  geoCoder: {fileID: 1265033760}
+  geoCoder: {fileID: 0}
   tourManager: {fileID: 1638367721}
   VRMapUI: {fileID: 8697226002392255113}
---- !u!114 &1265033760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265033756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ba5a1a3413e0044a945249d18dc3286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contactEmail: thanosgargoulkas@gmail.com
-  minRequestIntervalSeconds: 1
-  demoAddress: 
-  runDemoOnStart: 0
 --- !u!1 &1294458472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,9 +1070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2355c08ba7bce4bb959548c59195ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  address: White Tower, Thessaloniki
-  lat: 0
-  lon: 0
+  lat: 40.63125
+  lon: 22.960146
   poiPrefab: {fileID: 4830695374616460426, guid: e31d8606d095a4b43a478a229cbaafc9, type: 3}
   georeference: {fileID: 913971271}
   poiDatabase: {fileID: 11400000, guid: db41c9508ca296f44851114a9c996d2e, type: 2}
