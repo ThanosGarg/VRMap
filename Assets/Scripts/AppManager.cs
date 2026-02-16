@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class AppManager : MonoBehaviour
 {
-    public Player player;
+    public Transform player;
     public static AppManager instance;
-    public GeoCodeAddress geoCoder;
 
     public TourManager tourManager;
     public VRMapUI VRMapUI;

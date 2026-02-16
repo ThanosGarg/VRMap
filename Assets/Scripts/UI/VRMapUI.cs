@@ -1,4 +1,5 @@
 using System.Collections;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 
@@ -8,19 +9,21 @@ public class VRMapUI : VRPlayerUI
     public OpenStreetMapViewer mapViewer; // Assign in Inspector
     public TextMeshProUGUI CurrentPOIINFO;
     public int zoomLevel = 10;
-    void OnEnable()
+    public POIButton poiButtonPrefab;
+    public Transform poiArea;
+    void Start()
     {
-        AppManager.instance.player.onEnterPOI += UpdatePOIINFO;
-        AppManager.instance.player.onExitPOI += ClearPOIINFO;
-    }
-    void OnDisable()
-    {
-
-        AppManager.instance.player.onEnterPOI -= UpdatePOIINFO;
-        AppManager.instance.player.onExitPOI -= ClearPOIINFO;
+        SpawnPOIButtons();
     }
 
-
+    private void SpawnPOIButtons()
+    {
+        foreach (POIData data in AppManager.instance.tourManager.poiDatabase.poiList)
+        {
+            POIButton button = Instantiate(poiButtonPrefab, poiArea);
+            button.Init(data);
+        }
+    }
     public void UpdatePlayerMap()
     {
         mapViewer.UpdateCoordinates(AppManager.instance.tourManager.lat, AppManager.instance.tourManager.lon, zoomLevel);
@@ -56,5 +59,6 @@ public class VRMapUI : VRPlayerUI
             UpdatePlayerMap();
         }
     }
+
 
 }

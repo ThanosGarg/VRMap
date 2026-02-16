@@ -7,12 +7,12 @@ public class PointOfInterest : MonoBehaviour
 
 
 {
-    
+
     public Transform labelTransform;
     public Action<double, double> onAddressToCoordinatesResolved; // added
     public POIData poiData;
     private CesiumGlobeAnchor globeAnchor;
-    private TourManager tourManager;    
+    private TourManager tourManager;
     public void Init(POIData data, TourManager manager)
     {
         // onAddressToCoordinatesResolved += OnAddressToCoordinatesResolved;
@@ -20,7 +20,7 @@ public class PointOfInterest : MonoBehaviour
         poiData = data;
         tourManager = manager;
         globeAnchor = GetComponent<CesiumGlobeAnchor>();
-         globeAnchor.SetPositionLongitudeLatitudeHeight(poiData.longitude, poiData.latitude, poiData.height);
+        globeAnchor.SetPositionLongitudeLatitudeHeight(poiData.longitude, poiData.latitude, poiData.height);
 
         // AppManager.instance.geoCoder.Geocode(poiData.address, onAddressToCoordinatesResolved);
         foreach (POIIcon icon in tourManager.Icons)
@@ -32,13 +32,13 @@ public class PointOfInterest : MonoBehaviour
             }
         }
     }
-public void UpdateIcon(Sprite icon)
+    public void UpdateIcon(Sprite icon)
     {
-       Image iconImage = labelTransform.GetComponent<Image>(); 
-       if (iconImage != null)
-       {
-           iconImage.sprite = icon;
-       }
+        Image iconImage = labelTransform.GetComponent<Image>();
+        if (iconImage != null)
+        {
+            iconImage.sprite = icon;
+        }
     }
     public void OnAddressToCoordinatesResolved(double lat, double lon) // added
     {
@@ -47,9 +47,9 @@ public void UpdateIcon(Sprite icon)
         poiData.longitude = (float)lon;
         globeAnchor.SetPositionLongitudeLatitudeHeight(lon, lat, poiData.height);
 
-    
+
     }
-public void UpdateLabelOrientation(Transform playerTransform)
+    public void UpdateLabelOrientation(Transform playerTransform)
     {
         if (labelTransform != null && playerTransform != null)
         {
@@ -63,7 +63,7 @@ public void UpdateLabelOrientation(Transform playerTransform)
     }
     void Update()
     {
-         UpdateLabelOrientation(AppManager.instance.player.transform);
+        UpdateLabelOrientation(AppManager.instance.player);
     }
 }
 
