@@ -21,16 +21,15 @@ public class VRMapUI : VRPlayerUI
         foreach (POIData data in AppManager.instance.tourManager.poiDatabase.poiList)
         {
             POIButton button = Instantiate(poiButtonPrefab, poiArea);
-            button.Init(data);
+            button.Init(data, AppManager.instance.tourManager);
         }
     }
     public void UpdatePlayerMap()
     {
         mapViewer.UpdateCoordinates(AppManager.instance.tourManager.lat, AppManager.instance.tourManager.lon, zoomLevel);
     }
-    void UpdatePOIINFO(POIData currentPOI)
+    public void UpdatePOIINFO(POIData currentPOI)
     {
-        Debug.Log($"Entered POI: {currentPOI.poiName}");
         if (currentPOI != null && CurrentPOIINFO != null)
         {
             CurrentPOIINFO.text = $"POI Name: {currentPOI.poiName}\n" +

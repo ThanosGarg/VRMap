@@ -8,7 +8,7 @@ public class OpenStreetMapViewer : MonoBehaviour
     // Map center coordinates
     public float latitude = 40.7128f; // Example: New York City
     public float longitude = -74.0060f;
-    public int zoom = 15;
+    public int zoom;
     public Image targetImage; // Assign a UI Image in the Inspector
 
 

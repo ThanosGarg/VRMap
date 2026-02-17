@@ -17,6 +17,8 @@ public class TourManager : MonoBehaviour
 
 
 
+
+
     void Start()
     {
         foreach (POIData data in poiDatabase.poiList)
@@ -25,7 +27,12 @@ public class TourManager : MonoBehaviour
         }
 
         georeference.SetOriginLongitudeLatitudeHeight(lon, lat, 150f);
-        AppManager.instance.VRMapUI.StartCoroutine(AppManager.instance.VRMapUI.UpdateMapRoutine());
+    }
+    public void UpdatePlayerLocation(float newLat, float newLon)
+    {
+        lat = newLat;
+        lon = newLon;
+        georeference.SetOriginLongitudeLatitudeHeight(lon, lat, 150f);
     }
 
 
