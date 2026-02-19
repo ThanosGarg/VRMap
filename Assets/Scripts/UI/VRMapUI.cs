@@ -9,21 +9,7 @@ public class VRMapUI : VRPlayerUI
     public OpenStreetMapViewer mapViewer; // Assign in Inspector
     public TextMeshProUGUI CurrentPOIINFO;
     public int zoomLevel = 10;
-    public POIButton poiButtonPrefab;
-    public Transform poiArea;
-    void Start()
-    {
-        SpawnPOIButtons();
-    }
 
-    private void SpawnPOIButtons()
-    {
-        foreach (POIData data in AppManager.instance.tourManager.poiDatabase.poiList)
-        {
-            POIButton button = Instantiate(poiButtonPrefab, poiArea);
-            button.Init(data, AppManager.instance.tourManager);
-        }
-    }
     public void UpdatePlayerMap()
     {
         mapViewer.UpdateCoordinates(AppManager.instance.tourManager.lat, AppManager.instance.tourManager.lon, zoomLevel);

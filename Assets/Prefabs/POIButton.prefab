@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6699514205334726042}
   - component: {fileID: 9087364761884850247}
   - component: {fileID: 4019221798827361209}
+  - component: {fileID: 1593517698913510138}
   m_Layer: 5
   m_Name: POIButton
   m_TagString: Untagged
@@ -142,6 +143,26 @@ MonoBehaviour:
     latitude: 0
     longitude: 0
     height: 0
+  buttonComponent: {fileID: 0}
+--- !u!114 &1593517698913510138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683088126175634867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &8136030554109115572
 GameObject:
   m_ObjectHideFlags: 0
