@@ -17,6 +17,8 @@ public class VRPOIUI : VRPlayerUI
     public InputAction MoveUpAction;
     public InputAction MoveDownAction;
 
+    public InputAction SelectAction;
+
     private int selectedButtonIndex = 0;
 
     void Start()
@@ -29,6 +31,8 @@ public class VRPOIUI : VRPlayerUI
         MoveUpAction.started += MoveUp;
         MoveDownAction.Enable();
         MoveDownAction.started += MoveDown;
+        SelectAction.Enable();
+        SelectAction.started += Select;
     }
 
     void OnDisable()
@@ -37,6 +41,8 @@ public class VRPOIUI : VRPlayerUI
         MoveUpAction.started -= MoveUp;
         MoveDownAction.Disable();
         MoveDownAction.started -= MoveDown;
+        SelectAction.Disable();
+        SelectAction.started -= Select;
     }
     private void SpawnPOIButtons()
     {
@@ -49,29 +55,6 @@ public class VRPOIUI : VRPlayerUI
 
         SelectButton(poiButtons[selectedButtonIndex]);
     }
-
-    // private void ChangeSelectedPOI(InputAction.CallbackContext context)
-    // {
-    //     Debug.Log(context.ReadValue<Vector2>());
-    //     Vector2 input = context.ReadValue<Vector2>();
-
-    //     selectedButtonIndex -= (int)input.y;
-
-    //     if (selectedButtonIndex < 0)
-    //     {
-    //         selectedButtonIndex = poiButtons.Count - 1;
-    //     }
-    //     else if (selectedButtonIndex >= poiButtons.Count)
-    //     {
-    //         selectedButtonIndex = 0;
-    //     }
-
-    //     if (poiButtons[selectedButtonIndex] != null)
-    //     {
-    //         SelectButton(poiButtons[selectedButtonIndex]);
-    //     }
-    // }
-
 
     private void MoveUp(InputAction.CallbackContext context)
     {
@@ -98,6 +81,13 @@ public class VRPOIUI : VRPlayerUI
         }
     }
 
+    private void Select(InputAction.CallbackContext context)
+    {
+        if (selectedButton != null)
+        {
+            selectedButton.OnButtonClicked();
+        }
+    }
     private void SelectButton(POIButton button)
     {
         if (button != null)
