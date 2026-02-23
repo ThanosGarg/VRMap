@@ -9,6 +9,7 @@ public class TourManager : MonoBehaviour
 
     public float lat = 0f;
     public float lon = 0f;
+    public float altitude = 150f;
     public PointOfInterest poiPrefab;
     public CesiumGeoreference georeference;
     public POIDB poiDatabase;
@@ -26,13 +27,13 @@ public class TourManager : MonoBehaviour
             SpawnPOI(data);
         }
 
-        georeference.SetOriginLongitudeLatitudeHeight(lon, lat, 150f);
+        georeference.SetOriginLongitudeLatitudeHeight(lon, lat, altitude);
     }
     public void UpdatePlayerLocation(float newLat, float newLon)
     {
         lat = newLat;
         lon = newLon;
-        georeference.SetOriginLongitudeLatitudeHeight(lon, lat, 150f);
+        georeference.SetOriginLongitudeLatitudeHeight(lon, lat, altitude);
     }
 
 
