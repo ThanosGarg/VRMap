@@ -9,11 +9,13 @@ public class VRMapUI : VRPlayerUI
     public OpenStreetMapViewer mapViewer; // Assign in Inspector
     public TextMeshProUGUI CurrentPOIINFO;
     public int zoomLevel = 10;
-
-    public void UpdatePlayerMap()
+    void Start()
     {
         mapViewer.UpdateCoordinates(AppManager.instance.tourManager.lat, AppManager.instance.tourManager.lon, zoomLevel);
+        CurrentPOIINFO.text = "No POI Selected";
+
     }
+
     public void UpdatePOIINFO(POIData currentPOI)
     {
         if (currentPOI != null && CurrentPOIINFO != null)
@@ -35,15 +37,7 @@ public class VRMapUI : VRPlayerUI
             CurrentPOIINFO.text = "No POI Selected";
         }
     }
-    public IEnumerator UpdateMapRoutine()
-    {
-        // suspend execution for 5 seconds
-        while (true)
-        {
-            yield return new WaitForSeconds(5);
-            UpdatePlayerMap();
-        }
-    }
+
 
 
 }
