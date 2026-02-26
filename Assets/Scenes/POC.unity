@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 107108ec32abbe9459250dcc9d382a05, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -173,11 +173,11 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 0
+  m_Spacing: 12
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lat: 40.63125
   lon: 22.960146
-  altitude: 135
+  altitude: 200
   poiPrefab: {fileID: 4830695374616460426, guid: e31d8606d095a4b43a478a229cbaafc9, type: 3}
   georeference: {fileID: 913971271}
   poiDatabase: {fileID: 11400000, guid: db41c9508ca296f44851114a9c996d2e, type: 2}

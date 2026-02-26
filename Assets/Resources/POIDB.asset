@@ -13,21 +13,46 @@ MonoBehaviour:
   m_Name: POIDB
   m_EditorClassIdentifier: 
   poiList:
-  - poiName: Metro
-    poiType: 5
-    address: Erithrou Stavrou 33, Thessaloniki
-    latitude: 40.58366
-    longitude: 22.970001
+  - poiName: "\u039B\u03B5\u03C5\u03BA\u03CC\u03C2 \u03A0\u03CD\u03C1\u03B3\u03BF\u03C2
+      (White Tower)"
+    poiType: 0
+    address: 
+    latitude: 40.62643
+    longitude: 22.94829
     height: 150
-  - poiName: Test
-    poiType: 6
-    address: Nikiforou Foka 5-1, Thessaloniki
-    latitude: 40.629036
-    longitude: 22.949755
+  - poiName: "\u0391\u03B3\u03AF\u03B1 \u03A3\u03BF\u03C6\u03AF\u03B1 (Hagia Sophia)"
+    poiType: 0
+    address: 
+    latitude: 40.6328
+    longitude: 22.948
     height: 150
-  - poiName: Hospital
+  - poiName: "\u039A\u03B1\u03C3\u03C4\u03C1\u03B1 (\u03C4\u03B5\u03AF\u03C7\u03B7
+      \u0386\u03BD\u03C9 \u03A0\u03CC\u03BB\u03B7\u03C2)"
+    poiType: 0
+    address: 
+    latitude: 40.6405
+    longitude: 22.9523
+    height: 200
+  - poiName: "\u0393\u03B5\u03BD\u03B9\u03BA\u03CC \u039D\u03BF\u03C3\u03BF\u03BA\u03BF\u03BC\u03B5\u03AF\u03BF
+      \u0398\u03B5\u03C3\u03C3\u03B1\u03BB\u03BF\u03BD\u03AF\u03BA\u03B7\u03C2 \u0399\u03C0\u03C0\u03BF\u03BA\u03C1\u03AC\u03C4\u03B5\u03B9\u03BF"
     poiType: 1
-    address: Antheon 61, Thessaloniki
-    latitude: 40.58366
-    longitude: 22.970001
+    address: 
+    latitude: 40.61422
+    longitude: 22.9628
     height: 150
+  - poiName: "\u03A0\u03B1\u03BD\u03B5\u03C0\u03B9\u03C3\u03C4\u03B7\u03BC\u03B9\u03B1\u03BA\u03CC
+      \u0393\u03B5\u03BD\u03B9\u03BA\u03CC \u039D\u03BF\u03C3\u03BF\u03BA\u03BF\u03BC\u03B5\u03AF\u03BF
+      \u0398\u03B5\u03C3\u03C3\u03B1\u03BB\u03BF\u03BD\u03AF\u03BA\u03B7\u03C2 \u0391\u03A7\u0395\u03A0\u0391"
+    poiType: 1
+    address: 
+    latitude: 40.62956
+    longitude: 22.96007
+    height: 150
+  - poiName: "\u03A0\u03B1\u03BD\u03B5\u03C0\u03B9\u03C3\u03C4\u03B7\u03BC\u03B9\u03B1\u03BA\u03CC
+      \u0393\u03B5\u03BD\u03B9\u03BA\u03CC \u039D\u03BF\u03C3\u03BF\u03BA\u03BF\u03BC\u03B5\u03AF\u03BF
+      \u0398\u03B5\u03C3\u03C3\u03B1\u03BB\u03BF\u03BD\u03AF\u03BA\u03B7\u03C2 \u0391\u03A7\u0395\u03A0\u0391"
+    poiType: 1
+    address: 
+    latitude: 40.62956
+    longitude: 22.96007
+    height: 200
