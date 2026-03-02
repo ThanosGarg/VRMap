@@ -23,36 +23,66 @@ MonoBehaviour:
   - poiName: "\u0391\u03B3\u03AF\u03B1 \u03A3\u03BF\u03C6\u03AF\u03B1 (Hagia Sophia)"
     poiType: 0
     address: 
-    latitude: 40.6328
-    longitude: 22.948
+    latitude: 40.632965
+    longitude: 22.9475
     height: 150
   - poiName: "\u039A\u03B1\u03C3\u03C4\u03C1\u03B1 (\u03C4\u03B5\u03AF\u03C7\u03B7
       \u0386\u03BD\u03C9 \u03A0\u03CC\u03BB\u03B7\u03C2)"
     poiType: 0
     address: 
-    latitude: 40.6405
-    longitude: 22.9523
-    height: 200
+    latitude: 40.644054
+    longitude: 22.961952
+    height: 300
   - poiName: "\u0393\u03B5\u03BD\u03B9\u03BA\u03CC \u039D\u03BF\u03C3\u03BF\u03BA\u03BF\u03BC\u03B5\u03AF\u03BF
       \u0398\u03B5\u03C3\u03C3\u03B1\u03BB\u03BF\u03BD\u03AF\u03BA\u03B7\u03C2 \u0399\u03C0\u03C0\u03BF\u03BA\u03C1\u03AC\u03C4\u03B5\u03B9\u03BF"
     poiType: 1
     address: 
-    latitude: 40.61422
-    longitude: 22.9628
+    latitude: 40.61445
+    longitude: 22.96325
     height: 150
-  - poiName: "\u03A0\u03B1\u03BD\u03B5\u03C0\u03B9\u03C3\u03C4\u03B7\u03BC\u03B9\u03B1\u03BA\u03CC
-      \u0393\u03B5\u03BD\u03B9\u03BA\u03CC \u039D\u03BF\u03C3\u03BF\u03BA\u03BF\u03BC\u03B5\u03AF\u03BF
-      \u0398\u03B5\u03C3\u03C3\u03B1\u03BB\u03BF\u03BD\u03AF\u03BA\u03B7\u03C2 \u0391\u03A7\u0395\u03A0\u0391"
+  - poiName: "\u0391\u03A7\u0395\u03A0\u0391"
     poiType: 1
     address: 
-    latitude: 40.62956
-    longitude: 22.96007
+    latitude: 40.62971
+    longitude: 22.960821
     height: 150
-  - poiName: "\u03A0\u03B1\u03BD\u03B5\u03C0\u03B9\u03C3\u03C4\u03B7\u03BC\u03B9\u03B1\u03BA\u03CC
-      \u0393\u03B5\u03BD\u03B9\u03BA\u03CC \u039D\u03BF\u03C3\u03BF\u03BA\u03BF\u03BC\u03B5\u03AF\u03BF
-      \u0398\u03B5\u03C3\u03C3\u03B1\u03BB\u03BF\u03BD\u03AF\u03BA\u03B7\u03C2 \u0391\u03A7\u0395\u03A0\u0391"
-    poiType: 1
+  - poiName: U.S. Consulate General Thessaloniki
+    poiType: 2
     address: 
-    latitude: 40.62956
-    longitude: 22.96007
-    height: 200
+    latitude: 40.63337
+    longitude: 22.943214
+    height: 150
+  - poiName: "\u03A3\u03A4\u0391\u0398\u039C\u039F\u03A3 \u039C\u0395\u03A4\u03A1\u039F
+      \u0391\u039C\u0391\u039E\u039F\u03A3\u03A4\u0391\u03A3\u0399\u039F \u03A0\u03A5\u039B\u0391\u0399\u0391\u03A3"
+    poiType: 5
+    address: 
+    latitude: 40.58017
+    longitude: 22.963026
+    height: 150
+  - poiName: "\u03A3\u03A4\u0391\u0398\u039C\u039F\u03A3 \u039C\u0395\u03A4\u03A1\u039F
+      \u039D\u0395\u0391 \u0395\u039B\u0392\u0395\u03A4\u0399\u0391 "
+    poiType: 5
+    address: 
+    latitude: 40.593224
+    longitude: 22.970284
+    height: 150
+  - poiName: "ATM  E\u0398\u039D\u0399\u039A\u0397\u03A3 \u03A4\u03A1\u0391\u03A0\u0395\u0396\u0391\u03A3"
+    poiType: 6
+    address: 
+    latitude: 40.62248
+    longitude: 22.971413
+    height: 150
+  - poiName: "\u039C\u039F\u03A5\u03A3\u0395\u0399\u039F \u0392\u03A5\u0396\u0391\u039D\u03A4\u0399\u039D\u039F\u03A5
+      \u03A0\u039F\u039B\u0399\u03A4\u0399\u03A3\u039C\u039F\u03A5"
+    poiType: 4
+    address: 
+    latitude: 40.624065
+    longitude: 22.955841
+    height: 150
+  - poiName: "\u0391\u03A8\u0399\u0394\u0391 \u0393\u0391\u039B\u0395\u03A1\u0399\u039F\u03A5,
+      \u039A\u0391\u039C\u0391\u03A1\u0391"
+    poiType: 0
+    address: 
+    latitude: 40.632378
+    longitude: 22.952406
+    height: 150

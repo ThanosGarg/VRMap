@@ -27,7 +27,7 @@ public class POIButton : MonoBehaviour
     {
         if (tourManager != null && poiData != null)
         {
-            tourManager.UpdatePlayerLocation(poiData.latitude, poiData.longitude);
+            tourManager.UpdatePlayerLocation(poiData.latitude, poiData.longitude, poiData.height);
             AppManager.instance.VRMapUI.UpdatePOIINFO(poiData);
             AppManager.instance.VRMapUI.mapViewer.UpdateCoordinates(poiData.latitude, poiData.longitude, 15);
         }

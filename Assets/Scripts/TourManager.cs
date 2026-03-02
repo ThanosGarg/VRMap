@@ -29,10 +29,12 @@ public class TourManager : MonoBehaviour
 
         georeference.SetOriginLongitudeLatitudeHeight(lon, lat, altitude);
     }
-    public void UpdatePlayerLocation(float newLat, float newLon)
+    public void UpdatePlayerLocation(float newLat, float newLon, float newAltitude)
     {
         lat = newLat;
         lon = newLon;
+        altitude = newAltitude;
+
         georeference.SetOriginLongitudeLatitudeHeight(lon, lat, altitude);
     }
 
