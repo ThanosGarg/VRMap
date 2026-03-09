@@ -780,8 +780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2355c08ba7bce4bb959548c59195ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lat: 40.63125
-  lon: 22.960146
+  lat: 40.62666
+  lon: 22.948875
   altitude: 200
   poiPrefab: {fileID: 4830695374616460426, guid: e31d8606d095a4b43a478a229cbaafc9, type: 3}
   georeference: {fileID: 913971271}
